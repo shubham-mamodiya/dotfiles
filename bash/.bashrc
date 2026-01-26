@@ -12,5 +12,5 @@ source ~/.local/share/omarchy/default/bash/rc
 
 
 
-alias sh_are_host="python3 ~/.scripts/share.py -p 8000"
+alias share_files="python3 ~/.scripts/share.py -p 8000"
 . "$HOME/.cargo/env"
