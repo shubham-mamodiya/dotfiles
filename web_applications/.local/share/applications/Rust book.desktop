@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Rust book
+Comment=Rust book
+Exec=omarchy-launch-webapp https://doc.rust-lang.org/book/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/Rust book.png
+StartupNotify=true

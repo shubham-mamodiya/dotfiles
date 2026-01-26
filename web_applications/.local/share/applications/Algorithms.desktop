@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Algorithms
+Comment=Algorithms
+Exec=omarchy-launch-webapp https://algs4.cs.princeton.edu/home/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/Algorithms.png
+StartupNotify=true

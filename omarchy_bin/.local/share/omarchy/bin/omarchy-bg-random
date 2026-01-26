@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Randomly sets a background image from the theme directory
+
+BACKGROUNDS_DIR="$HOME/Wallpapers"
+CURRENT_BACKGROUND_LINK="$HOME/.config/omarchy/current/background"
+
+mapfile -d '' -t BACKGROUNDS < <(find "$BACKGROUNDS_DIR" -type f -print0 | sort -z)
+TOTAL=${#BACKGROUNDS[@]}
+
+if [[ $TOTAL -eq 0 ]]; then
+  notify-send "No background was found for theme" -t 2000
+  pkill -x swaybg
+  setsid uwsm app -- swaybg --color '#000000' >/dev/null 2>&1 &
+else
+  # Get current background from symlink
+  if [[ -L "$CURRENT_BACKGROUND_LINK" ]]; then
+    CURRENT_BACKGROUND=$(readlink "$CURRENT_BACKGROUND_LINK")
+  else
+    CURRENT_BACKGROUND=""
+  fi
+
+  # Pick a random background, ensuring it's different from the current one
+  NEW_BACKGROUND=""
+  if [[ $TOTAL -eq 1 ]]; then
+    NEW_BACKGROUND="${BACKGROUNDS[0]}"
+  else
+    while :; do
+      RANDOM_INDEX=$((RANDOM % TOTAL))
+      CANDIDATE="${BACKGROUNDS[$RANDOM_INDEX]}"
+      [[ "$CANDIDATE" != "$CURRENT_BACKGROUND" ]] && NEW_BACKGROUND="$CANDIDATE" && break
+    done
+  fi
+
+  # Set new background symlink
+  ln -nsf "$NEW_BACKGROUND" "$CURRENT_BACKGROUND_LINK"
+
+  notify-send -i "$NEW_BACKGROUND" "Wallpaper Changed" "$(basename "$NEW_BACKGROUND")"
+  # Relaunch swaybg with the new background
+  pkill -x swaybg
+  setsid uwsm app -- swaybg -i "$CURRENT_BACKGROUND_LINK" -m fit >/dev/null 2>&1 &
+fi

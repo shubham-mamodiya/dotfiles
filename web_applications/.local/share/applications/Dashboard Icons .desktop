@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Dashboard Icons 
+Comment=Dashboard Icons 
+Exec=omarchy-launch-webapp https://dashboardicons.com/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/Dashboard Icons .png
+StartupNotify=true

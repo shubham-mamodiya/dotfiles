@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Lazyvim keymaps
+Comment=Lazyvim keymaps
+Exec=omarchy-launch-webapp https://www.lazyvim.org/keymaps
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/Lazyvim keymaps.png
+StartupNotify=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=vim cheat sheet
+Comment=vim cheat sheet
+Exec=omarchy-launch-webapp https://vim.rtorr.com/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/vim cheat sheet.png
+StartupNotify=true

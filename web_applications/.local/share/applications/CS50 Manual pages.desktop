@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=CS50 Manual pages
+Comment=CS50 Manual pages
+Exec=omarchy-launch-webapp https://manual.cs50.io/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/CS50 Manual pages.png
+StartupNotify=true

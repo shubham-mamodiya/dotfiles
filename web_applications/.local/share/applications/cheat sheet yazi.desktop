@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=cheat sheet yazi
+Comment=cheat sheet yazi
+Exec=omarchy-launch-webapp https://ricoberger.de/cheat-sheets/yazi/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/cheat sheet yazi.png
+StartupNotify=true

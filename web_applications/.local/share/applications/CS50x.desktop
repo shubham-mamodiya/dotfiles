@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=CS50x
+Comment=CS50x
+Exec=omarchy-launch-webapp https://cs50.harvard.edu/x/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/CS50x.png
+StartupNotify=true

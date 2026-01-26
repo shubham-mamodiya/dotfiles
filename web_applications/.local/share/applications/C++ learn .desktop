@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=C++ learn 
+Comment=C++ learn 
+Exec=omarchy-launch-webapp https://www.learncpp.com/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/C++ learn .png
+StartupNotify=true

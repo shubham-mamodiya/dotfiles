@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=wolframalpha calculator 
+Comment=wolframalpha calculator 
+Exec=omarchy-launch-webapp https://www.wolframalpha.com/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/wolframalpha calculator.png
+StartupNotify=true
