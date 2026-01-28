@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Project Euler
+Comment=Project Euler
+Exec=omarchy-launch-webapp https://projecteuler.net/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/project euler.png
+StartupNotify=true

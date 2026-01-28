@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=GeoGebra
+Comment=GeoGebra
+Exec=omarchy-launch-webapp https://www.geogebra.org/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/GeoGebra.png
+StartupNotify=true
