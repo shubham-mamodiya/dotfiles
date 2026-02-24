@@ -14,3 +14,5 @@ source ~/.local/share/omarchy/default/bash/rc
 
 alias share_files="python3 ~/.scripts/share.py -p 8000"
 . "$HOME/.cargo/env"
+
+alias hollow_knight_nvidia='prime-run env SDL_VIDEODRIVER=x11 "$HOME/GOG Games/Hollow Knight/game/Hollow Knight" -force-glcore'

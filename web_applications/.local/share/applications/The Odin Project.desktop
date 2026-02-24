@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=The Odin Project
+Comment=The Odin Project
+Exec=omarchy-launch-webapp https://www.theodinproject.com/dashboard
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/The Odin Project.png
+StartupNotify=true

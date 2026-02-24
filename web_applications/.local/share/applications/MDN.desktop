@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=MDN
+Comment=MDN
+Exec=omarchy-launch-webapp https://developer.mozilla.org/en-US/
+Terminal=false
+Type=Application
+Icon=/home/nuts/.local/share/applications/icons/MDN.png
+StartupNotify=true
