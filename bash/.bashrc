@@ -16,17 +16,19 @@ export PATH="/home/nuts/.cache/.bun/bin:$PATH"
 
 # FVM
 export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-alias flutter="fvm flutter"
+export PATH="$HOME/fvm/default/bin:$PATH"
 
 # for flutter to use chromium
-export CHROME_EXECUTABLE=/usr/bin/chromium
+export CHROME_EXECUTABLE=/usr/bin/brave-origin-beta
 
 # android studio and emulators
+#
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
-
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
 # android studio and emulators end
+
+alias play_music='cliamp /home/nuts/Music/'

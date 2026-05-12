@@ -74,5 +74,5 @@ map("n", "<A-F7>", function()
   widgets.hover()
 
   -- Opened as a floating window. Force close with <Esc> if it sticks.
-  vim.keymap.set("n", "<Esc>", "<cmd>close<cr>", { buffer = 0, silent = true, nowait = true })
+  map("n", "<Esc>", "<cmd>close<cr>", { buffer = 0, silent = true, nowait = true })
 end, { desc = "DAP Widgets Hover" }) -- Alt+F7

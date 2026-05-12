@@ -19,6 +19,8 @@
     "davidmh",
     "nvim",
     "nvimtools",
-    "Dartpedia"
+    "Dartpedia",
+    "dartdocs",
+    "wordle"
   ]
 }
