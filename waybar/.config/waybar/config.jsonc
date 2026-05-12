@@ -7,47 +7,32 @@
   "modules-left": [
     "custom/omarchy",
     "hyprland/workspaces"
+    // "hyprland/window"
   ],
   "modules-center": [
     "clock",
-    "custom/weather",
     "custom/update",
-    "custom/voxtype",
     "custom/screenrecording-indicator",
     "custom/idle-indicator",
     "custom/notification-silencing-indicator"
   ],
   "modules-right": [
+    "mpris",
     "group/tray-expander",
-    "bluetooth",
+    "backlight",
     "network",
+    "bluetooth",
     "pulseaudio",
     "cpu",
     "battery"
   ],
   "hyprland/workspaces": {
-    "on-click": "activate",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "cursor": true,
     "format": "{icon}",
-    "format-icons": {
-      "default": "",
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "10": "0",
-      "active": "󱓻"
-    },
     "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
+      "*": 5
     }
   },
   "custom/omarchy": {
@@ -71,17 +56,10 @@
     "on-click-right": "alacritty"
   },
   "clock": {
-    "format": "{:L%A %H:%M}",
-    "format-alt": "{:L%d %B W%V %Y}",
-    "tooltip": false,
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%A %d/%m/%Y}",
+    "tooltip-format": "<span>{calendar}</span>",
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
-  },
-  "custom/weather": {
-    "exec": "$OMARCHY_PATH/default/waybar/weather.sh",
-    "return-type": "json",
-    "interval": 60,
-    "tooltip": false,
-    "on-click": "notify-send -u low \"$(omarchy-weather-status)\""
   },
   "network": {
     "format-icons": [
@@ -91,12 +69,12 @@
       "󰤥",
       "󰤨"
     ],
-    "format": "{icon}",
-    "format-wifi": "{icon}",
+    "format": "{icon} {essid}",
+    "format-wifi": "{icon} {essid}",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰤮",
-    "tooltip-format-wifi": "{essid} ({frequency} GHz)",
-    "tooltip-format-ethernet": "Connected",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
@@ -148,7 +126,7 @@
     "format": "",
     "format-off": "󰂲",
     "format-disabled": "󰂲",
-    "format-connected": "󰂱",
+    "format-connected": "",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "omarchy-launch-bluetooth"
@@ -178,16 +156,14 @@
     },
     "modules": [
       "custom/expand-icon",
-      "tray"
+      "tray",
+      "memory",
+      "custom/weather"
     ]
   },
   "custom/expand-icon": {
-    "format": "",
-    "tooltip": false,
-    "on-scroll-up": "",
-    "on-scroll-down": "",
-    "on-scroll-left": "",
-    "on-scroll-right": ""
+    "format": "",
+    "tooltip": false
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-capture-screenrecording",
@@ -207,21 +183,49 @@
     "signal": 10,
     "return-type": "json"
   },
-  "custom/voxtype": {
-    "exec": "omarchy-voxtype-status",
-    "return-type": "json",
-    "format": "{icon}",
-    "format-icons": {
-      "idle": "",
-      "recording": "󰍬",
-      "transcribing": "󰔟"
-    },
-    "tooltip": true,
-    "on-click-right": "omarchy-voxtype-config",
-    "on-click": "omarchy-voxtype-model"
-  },
   "tray": {
-    "icon-size": 12,
-    "spacing": 17
+    "icon-size": 14,
+    "spacing": 6
+  },
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "🌑",
+      "🌘",
+      "🌗",
+      "🌖",
+      "🌕"
+    ]
+  },
+  "memory": {
+    "format": " {used:0.1f}gb",
+    "interval": 2,
+    "on-click": "omarchy-launch-or-focus-tui btop"
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 600,
+    "exec": "wttrbar --nerd --location Changchun",
+    "return-type": "json"
+  },
+  "mpris": {
+    "format": "{player_icon} {artist} - {title}",
+    "format-paused": "{status_icon} <i>{artist} - {title}</i>",
+    "ignored-players": [
+      "chromium"
+    ],
+    "max-length": 35,
+    "player-icons": {
+      "default": "🎵",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    }
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 45
   }
 }
