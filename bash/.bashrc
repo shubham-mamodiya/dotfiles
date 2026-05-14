@@ -32,3 +32,5 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 # android studio and emulators end
 
 alias play_music='cliamp /home/nuts/Music/'
+
+alias cmake-clang='CC=clang CXX=clang++ cmake'

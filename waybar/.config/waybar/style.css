@@ -104,6 +104,7 @@ mpris.empty {
 #custom-notification-silencing-indicator,
 #custom-update {
   background-color: alpha(@foreground, 0.1);
+  font-weight: bold;
   padding: 5px 12px;
   margin: 5px 0;
   border-radius: 0;
@@ -170,7 +171,6 @@ mpris.empty {
 #custom-omarchy,
 #battery {
   background-color: @foreground;
-  font-weight: bold;
   color: @background;
   min-width: 10px;
   border-radius: 15px;
@@ -179,6 +179,7 @@ mpris.empty {
 }
 
 #battery {
+  font-weight: bold;
   margin-left: 5px;
 }
 
@@ -226,6 +227,21 @@ tooltip {
   background: @background;
   border: 2px solid alpha(@foreground, .5);
 }
+
+/* #battery.critical { */
+/*   color: #ff0000; */
+/*   animation-name: blink; */
+/*   animation-duration: 1s; */
+/*   animation-timing-function: linear; */
+/*   animation-iteration-count: infinite; */
+/*   animation-direction: alternate; */
+/* } */
+/**/
+/* @keyframes blink { */
+/*   to { */
+/*     opacity: 0.3; */
+/*   } */
+/* } */
 
 #battery.warning {
 
