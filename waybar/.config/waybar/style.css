@@ -251,3 +251,9 @@ tooltip {
 #battery.critical {
   color: #990f02;
 }
+
+
+#battery.enough {
+  color:
+    #32CD32;
+}

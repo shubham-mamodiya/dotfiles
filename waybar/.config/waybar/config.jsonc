@@ -119,7 +119,9 @@
     "on-click-right": "notify-send -u low \"$(omarchy-battery-status)\"",
     "states": {
       "warning": 30,
-      "critical": 20
+      "critical": 20,
+      "normal": 90,
+      "enough": 100
     }
   },
   "bluetooth": {
