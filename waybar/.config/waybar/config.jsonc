@@ -11,6 +11,7 @@
   ],
   "modules-center": [
     "clock",
+    "battery",
     "custom/update",
     "custom/screenrecording-indicator",
     "custom/idle-indicator",
@@ -23,8 +24,8 @@
     "network",
     "bluetooth",
     "pulseaudio",
-    "cpu",
-    "battery"
+    "cpu"
+    // ,"battery"
   ],
   "hyprland/workspaces": {
     "disable-scroll": true,
