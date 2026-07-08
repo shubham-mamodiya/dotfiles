@@ -15,5 +15,5 @@ sudo apt install -y luarocks tree-sitter-cli
 if [[ -d ~/.local/share/applications ]]; then
   sudo rm -rf /usr/share/applications/nvim.desktop
   sudo rm -rf /usr/local/share/applications/nvim.desktop
-  source ~/.local/share/omakub/applications/Neovim.sh
+  source ./Neovim.sh
 fi

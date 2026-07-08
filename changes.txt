@@ -24,7 +24,7 @@ gh repo clone shubham-mamodiya-dev/dotfiles
 
 sudo apt install yazi
 
-sudo apt update && sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+sudo apt update && sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick unzip curl
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo snap install yazi --classic
 yazi
@@ -48,7 +48,7 @@ curl -fsSL https://raw.githubusercontent.com/bjarneo/cliamp/HEAD/install.sh | sh
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-curl -f https://zed.dev/install.sh | sh
+
 
 sudo add-apt-repository ppa:mkasberg/ghostty-ubuntu
 sudo apt update
@@ -62,3 +62,17 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 nvm install --lts
 
+from gnome tweks or 
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+
+sudo snap install qalculate
+
+flatpak install flathub com.bitwarden.desktop
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl -fsSL https://raw.githubusercontent.com/bjarneo/cliamp/HEAD/install.sh | sh
+flatpak install flathub com.dec05eba.gpu_screen_recorder    you might wanna consider it
+sudo apt install starship
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt install obs-studio
+curl -fsSL https://bun.sh/install | bash
