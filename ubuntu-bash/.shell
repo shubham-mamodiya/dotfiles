@@ -1,0 +1,13 @@
+# History
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=32768
+HISTFILESIZE=32768
+
+# Bash completion
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    source /usr/share/bash-completion/bash_completion
+fi
+
+# User binaries
+export PATH="$HOME/.local/bin:$PATH"

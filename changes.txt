@@ -42,3 +42,23 @@ sudo systemctl enable --now tlp
 btop
 sudo prime-select on-demand
 
+installed nala
+
+curl -fsSL https://raw.githubusercontent.com/bjarneo/cliamp/HEAD/install.sh | sh
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+curl -f https://zed.dev/install.sh | sh
+
+sudo add-apt-repository ppa:mkasberg/ghostty-ubuntu
+sudo apt update
+sudo apt install ghostty
+
+sudo apt update
+sudo apt install -y curl unzip
+curl -fsSL https://bun.sh/install | bash
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+nvm install --lts
+

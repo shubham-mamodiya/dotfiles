@@ -11,7 +11,7 @@ sudo rm -rf /usr/share/applications/display-im6.q16.desktop
 sudo rm -rf /usr/share/applications/display-im7.q16.desktop
 
 # Replacing this with btop
-sudo rm -rf /usr/share/applications/org.gnome.SystemMonitor.desktop
+#sudo rm -rf /usr/share/applications/org.gnome.SystemMonitor.desktop
 
 # We added our own meant for Alacritty
 sudo rm -rf /usr/local/share/applications/nvim.desktop

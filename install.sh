@@ -6,8 +6,8 @@ set -e
   echo "Installing terminal and desktop tools..."
 
   # Install terminal tools
-  source ~/.local/share/omakub/install/terminal.sh
+  source ./install/terminal.sh
 
   # Install desktop tools and tweaks
-  source ~/.local/share/omakub/install/desktop.sh
+  source ./install/desktop.sh
 
