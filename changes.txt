@@ -76,3 +76,6 @@ sudo apt install starship
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt install obs-studio
 curl -fsSL https://bun.sh/install | bash
+
+sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/nvim 100
+sudo update-alternatives --config editor
