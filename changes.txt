@@ -79,3 +79,6 @@ curl -fsSL https://bun.sh/install | bash
 
 sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/nvim 100
 sudo update-alternatives --config editor
+
+# for network monitoring 
+sudo apt install nethogs
