@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=LinkedIn
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=ohghonlafcimfigiajnmhdklcbjlbfda
+Icon=brave-ohghonlafcimfigiajnmhdklcbjlbfda-Default
+StartupWMClass=crx_ohghonlafcimfigiajnmhdklcbjlbfda

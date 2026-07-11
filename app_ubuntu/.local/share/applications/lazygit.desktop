@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LazyGit
+Comment=Simple terminal UI for Git
+Exec=ghostty -e lazygit
+Icon=utilities-terminal
+Terminal=false
+Categories=Development;Git;
+Keywords=git;terminal;
+StartupNotify=true

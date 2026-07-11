@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=btop++
+GenericName=System Monitor
+Comment=Resource monitor
+Icon=btop
+Exec=ghostty -e btop
+Terminal=false
+Categories=System;Monitor;
+Keywords=system;process;task;

@@ -2,3 +2,14 @@
 [mgr]
 show_hidden = true
 
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true, for = "unix" },
+    { run = 'nvim.exe %*', block = true, for = "windows" }
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = "edit" }
+]
+

@@ -1,0 +1,4 @@
+[MIME Cache]
+application/x-zerosize=dev.zed.Zed.desktop;
+text/plain=Neovim.desktop;dev.zed.Zed.desktop;
+x-scheme-handler/zed=dev.zed.Zed.desktop;

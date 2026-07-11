@@ -4,11 +4,12 @@
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
 
 # Make it easy to maximize like you can fill left/right
-gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super><Shift>o']"
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super><Shift>w']"
+gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Super><Shift>p']"
 
 # Make it easy to resize undecorated windows
 gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>BackSpace']"
-
 
 # Full-screen with title/navigation bar
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift>F11']"
@@ -63,4 +64,18 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ command 'google-chrome --new-window'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ binding '<Shift><Alt>1'
 
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" name 'Browser'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" command 'brave-browser-stable'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" binding '<Shift><Super>Return'
 
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" name 'Neovim'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" command 'ghostty -e nvim'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" binding '<Shift><Super>n'
+
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" name 'yazi'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" command 'ghostty -e yazi'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" binding '<Shift><Super>f'
+
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" name 'ghostty'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" command 'ghostty'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" binding '<Super>Return'

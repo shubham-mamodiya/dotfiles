@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Yazi
+GenericName=Terminal File Manager
+Comment=Launch Yazi in Ghostty
+Exec=ghostty -e yazi
+Icon=/home/shubham-mamodiya/.local/share/applications/icons/yazi.png
+Terminal=false
+Categories=System;FileManager;
+StartupNotify=true

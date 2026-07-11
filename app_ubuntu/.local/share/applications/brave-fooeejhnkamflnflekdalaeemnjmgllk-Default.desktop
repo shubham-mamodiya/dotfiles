@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Figma
+Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fooeejhnkamflnflekdalaeemnjmgllk
+Icon=brave-fooeejhnkamflnflekdalaeemnjmgllk-Default
+StartupWMClass=crx_fooeejhnkamflnflekdalaeemnjmgllk
