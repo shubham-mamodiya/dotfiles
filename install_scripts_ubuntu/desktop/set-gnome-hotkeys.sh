@@ -40,6 +40,13 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>5']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']"
 
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Super><Shift>1']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Super><Shift>2']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Super><Shift>3']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Super><Shift>4']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Super><Shift>5']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Super><Shift>6']"
+
 # Reserve slots for custom keybindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-next/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-prev/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-random/']"
 
@@ -87,3 +94,5 @@ PATH3=/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH3 name 'Wallpaper Random'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH3 command "$HOME/.local/bin/wallpaper-random"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH3 binding '<Super><Shift>bracketright'
+
+gsettings set org.gnome.desktop.background picture-options 'scaled'

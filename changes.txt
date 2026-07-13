@@ -29,12 +29,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo snap install yazi --classic
 yazi
 
-mkdir -p ~/.local/share/fonts/JetBrainsMono
-cd /tmp
-wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
-unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
-fc-cache -fv
-
 sudo apt install gnome-tweaks
 
 sudo apt install tlp tlp-rdw 
@@ -82,3 +76,8 @@ sudo update-alternatives --config editor
 
 # for network monitoring 
 sudo apt install nethogs
+
+
+# clipboard manager
+sudo apt install gpaste-2 gnome-shell-extension-gpaste
+
