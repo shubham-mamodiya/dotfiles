@@ -77,6 +77,10 @@ gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/o
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" command 'ghostty'
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" binding '<Super>Return'
 
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" name 'RGB Off'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" command 'openrgb -p "$HOME/.config/OpenRGB/turn off rgb.orp"'
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" binding '<Super><Shift>r'
+
 # Next
 PATH1=/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-next/
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:$PATH1 name 'Wallpaper Next'

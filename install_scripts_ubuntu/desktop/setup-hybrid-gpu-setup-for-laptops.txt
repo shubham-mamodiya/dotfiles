@@ -1,0 +1,2 @@
+sudo prime-select on-demand
+ubuntu focuses hybrid gpu by default. just use the above command to be sure. if these packages are not available. the check the documentation. Then set it up manually.
