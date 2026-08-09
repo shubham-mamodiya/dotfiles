@@ -1,0 +1,17 @@
+~ ❯ gnome-extensions list
+tactile@lundal.io
+just-perfection-desktop@just-perfection
+undecorate@sun.wxg@gmail.com
+AlphabeticalAppGrid@stuarthayhurst
+blur-my-shell@aunetx
+tophat@fflewddur.github.io
+space-bar@luchrioh
+caffeine@patapon.info
+ding@rastersoft.com
+snapd-prompting@canonical.com
+snapd-search-provider@canonical.com
+tiling-assistant@ubuntu.com
+ubuntu-appindicators@ubuntu.com
+ubuntu-dock@ubuntu.com
+web-search-provider@ubuntu.com
+GPaste@gnome-shell-extensions.gnome.org

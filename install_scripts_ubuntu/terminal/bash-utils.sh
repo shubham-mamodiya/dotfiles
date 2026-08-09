@@ -20,3 +20,6 @@ sudo apt install -y \
   nethogs \
   btop \
   git
+
+# only if you use lm studio
+# sudo apt install libfuse2

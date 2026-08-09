@@ -137,3 +137,8 @@ source ~/.init
 source ~/.aliases
 source ~/.shell
 source ~/.prompt
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/shubham-mamodiya/.lmstudio/bin"
+# End of LM Studio CLI section
+

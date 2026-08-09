@@ -1,11 +1,4 @@
-
-
-
-
-sudo prime-select on-demand
-
-# for lm studio
-sudo apt install libfuse2
+#!/bin/bash
 
 sudo add-apt-repository ppa:apandada1/brightness-controller
 sudo apt update
