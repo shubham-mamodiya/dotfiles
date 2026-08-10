@@ -15,6 +15,10 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][1][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][1][Wallpaper][org.kde.image][General]
 DarkLightScheduleState=AAAAAQAAAAgAAAGf4Dhc0AAAAAAAAAGf3sE5qAAAAZ/e1lQAAAAAAQAAAZ/hmmWgAAABn+Gvf/gAAAGf5V6ZkAAAAAAAAAGf4+fnsAAAAZ/j/Po4AAAAAQAAAZ/mwDjoAAABn+bVS3AAAAGf6oTSaAAAAAAAAAGf6Q6R0AAAAZ/pI5igAAAAAQAAAZ/r5gwwAAABn+v7EwAAAAGf76sLQAAAAAAAAAGf7jU78AAAAZ/uSjrwAAAAAQAAAZ/xC9eoAAABn/Eg1qgAAAGf9NFAMAAAAAAAAAGf81vmEAAAAZ/zcNlYAAAAAQAAAZ/2MaMgAAABn/ZGmlAAAAGf+fdxOAAAAAAAAAGf+IKMSAAAAZ/4l3fAAAAAAQAAAZ/7V2qwAAABn/tsWhAAAAGf/x2iQAAAAAAAAAGf/akygAAAAZ/9vhYoAAAAAQAAAaAAfTJAAAABoACSEgAAAAGgBEPTSAAAAAAAAAGgAs/YuAAAAaAC5LCoAAAAAQAAAaAFovIAAAABoAW3zdg=
 DynamicMode=1
@@ -26,22 +30,9 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
-
-[Containments][2][Applets][22]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][2][Applets][22][Configuration]
-popupHeight=400
-popupWidth=560
-
-[Containments][2][Applets][22][Configuration][Appearance]
-fontWeight=400
-showDate=true
-showSeconds=false
 
 [Containments][2][Applets][23]
 immutability=1
@@ -173,13 +164,31 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][2][Applets][7][General]
-extraItems=org.kde.kdeconnect,org.kde.kupapplet,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.brightness,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.battery
+extraItems=org.kde.kdeconnect,org.kde.kupapplet,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.battery,org.kde.plasma.brightness
 knownItems=org.kde.kdeconnect,org.kde.kupapplet,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.brightness,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator
+scaleIconsToFit=true
 shownItems=org.kde.plasma.battery
 
+[Containments][2][Applets][85]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][2][Applets][85][Configuration]
+popupHeight=451
+popupWidth=560
+
+[Containments][2][Applets][85][Configuration][Appearance]
+fontWeight=400
+showDate=true
+showSeconds=false
+
+[Containments][2][Applets][85][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][2][General]
-AppletOrder=3;56;6;7;22;23
+AppletOrder=3;56;6;7;85;23
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/brave-jdilmifebbonejipfhkdekeifdlimcka-Default.desktop,0,259fbd25-e005-408b-a01d-bab30b9ee2c8,desktop:/brave-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop,0,259fbd25-e005-408b-a01d-bab30b9ee2c8,desktop:/brave-fooeejhnkamflnflekdalaeemnjmgllk-Default.desktop,0,259fbd25-e005-408b-a01d-bab30b9ee2c8,desktop:/brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,0,259fbd25-e005-408b-a01d-bab30b9ee2c8,desktop:/brave-mjoklplbddabcmpepnokjaffbmgbkkgg-Default.desktop,0,259fbd25-e005-408b-a01d-bab30b9ee2c8,desktop:/brave-jfohnpbmmamfbobhinklcflnaafbmeii-Default.desktop,0,259fbd25-e005-408b-a01d-bab30b9ee2c8
+screenMapping=
