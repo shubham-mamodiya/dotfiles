@@ -1,0 +1,8 @@
+[AC][SuspendAndShutdown]
+PowerButtonAction=8
+
+[Battery][SuspendAndShutdown]
+PowerButtonAction=8
+
+[LowBattery][SuspendAndShutdown]
+PowerButtonAction=8
