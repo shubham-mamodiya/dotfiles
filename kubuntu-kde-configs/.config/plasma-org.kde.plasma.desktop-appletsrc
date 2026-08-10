@@ -54,22 +54,6 @@ showAppsByName=true
 [Containments][2][Applets][3][Configuration][Shortcuts]
 global=Alt+F1
 
-[Containments][2][Applets][56]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][2][Applets][56][Configuration]
-launchers=applications:systemsettings.desktop,applications:org.kubuntu.manage-software.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,preferred://browser
-popupHeight=400
-popupWidth=560
-
-[Containments][2][Applets][56][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][2][Applets][56][Configuration][General]
-launchers=applications:org.kde.dolphin.desktop,preferred://browser,applications:com.mitchellh.ghostty.desktop,applications:opencomic.desktop
-
 [Containments][2][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -186,8 +170,24 @@ showSeconds=false
 DialogHeight=630
 DialogWidth=810
 
+[Containments][2][Applets][87]
+immutability=1
+plugin=org.kde.plasma.taskmanager
+
+[Containments][2][Applets][87][Configuration]
+launchers=applications:systemsettings.desktop,applications:org.kubuntu.manage-software.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,preferred://browser
+popupHeight=400
+popupWidth=560
+
+[Containments][2][Applets][87][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][2][Applets][87][Configuration][General]
+launchers=applications:org.kde.dolphin.desktop,preferred://browser,applications:com.mitchellh.ghostty.desktop,applications:opencomic.desktop
+
 [Containments][2][General]
-AppletOrder=3;56;6;7;85;23
+AppletOrder=3;87;6;7;85;23
 
 [ScreenMapping]
 itemsOnDisabledScreens=

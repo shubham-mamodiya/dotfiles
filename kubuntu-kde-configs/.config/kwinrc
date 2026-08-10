@@ -21,7 +21,9 @@ scaleEnabled=false
 slideEnabled=false
 slidingpopupsEnabled=false
 squashEnabled=false
+translucencyEnabled[$d]
 windowapertureEnabled=false
+wobblywindowsEnabled[$d]
 
 [Tiling][03ed033e-5cbe-4541-84df-3d600571c1b7][995fd47e-f04e-4f6e-b0d1-d0a5467a85fc]
 padding=4
