@@ -30,7 +30,7 @@ EOF
 # sudo apt update
 
 echo "==> Installing Firefox..."
-sudo apt install -y firefox
+sudo apt install firefox
 
 echo
 echo "==> Installation complete!"

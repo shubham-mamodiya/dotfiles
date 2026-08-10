@@ -115,9 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
-
-eval "$(starship init bash)"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -126,19 +123,18 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+. "$HOME/.cargo/env"
 
 # Editor used by CLI
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
 export VISUAL="nvim"
 
+eval "$(starship init bash)"
+
 source ~/.functions
 source ~/.init
 source ~/.aliases
 source ~/.shell
-source ~/.prompt
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/home/shubham-mamodiya/.lmstudio/bin"
-# End of LM Studio CLI section
-
+export LANG=en_US.UTF-8
