@@ -4,5 +4,10 @@ PowerButtonAction=8
 [Battery][SuspendAndShutdown]
 PowerButtonAction=8
 
+[BatteryManagement]
+BatteryCriticalAction=0
+BatteryCriticalLevel=10
+BatteryLowLevel=20
+
 [LowBattery][SuspendAndShutdown]
 PowerButtonAction=8

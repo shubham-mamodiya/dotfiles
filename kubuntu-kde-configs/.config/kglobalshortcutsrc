@@ -24,7 +24,7 @@ mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
 Halt Without Confirmation=,,Shut Down Without Confirmation
-Lock Session=Meta+L\tScreensaver,Meta+L\tScreensaver,Lock Session
+Lock Session=Screensaver,Meta+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Screen
 Log Out Without Confirmation=,,Log Out Without Confirmation
 LogOut=,,Log Out
@@ -46,6 +46,20 @@ ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on curr
 Grid View=Meta+G,Meta+G,Toggle Grid View
 Increase Opacity=,,Increase Opacity of Active Window by 5%
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
+Mouse Tiler: Auto Tiler - Block Toggle=Ctrl+Alt+B,none,Mouse Tiler: Auto Tiler - Block Toggle
+Mouse Tiler: Auto Tiler - Decrease Scroll Position=Ctrl+Alt+Left,none,Mouse Tiler: Auto Tiler - Scroll To Previous Window
+Mouse Tiler: Auto Tiler - Increase Scroll Position=Ctrl+Alt+Right,none,Mouse Tiler: Auto Tiler - Scroll To Next Window
+Mouse Tiler: Change Mode=Meta+Ctrl+Space,none,Mouse Tiler: Change Mode
+Mouse Tiler: Change To Next Auto Tiler=Ctrl+Alt+C,none,Mouse Tiler: Change To Next Auto Tiler
+Mouse Tiler: Change To Previous Auto Tiler=Ctrl+Alt+X,none,Mouse Tiler: Change To Previous Auto Tiler
+Mouse Tiler: Show All/Toggle Span=Ctrl+Space,none,Mouse Tiler: Show All/Toggle Span
+Mouse Tiler: Show Config=Ctrl+.,none,Mouse Tiler: Show Config
+Mouse Tiler: Toggle Auto Tile For Active Window=Ctrl+Alt+A,none,Mouse Tiler: Toggle Auto Tile For Active Window
+Mouse Tiler: Toggle Center In Tile=Meta+Ctrl+C,none,Mouse Tiler: Toggle Center In Tile
+Mouse Tiler: Toggle Input Type=Ctrl+Alt+I,none,Mouse Tiler: Toggle Input Type
+Mouse Tiler: Toggle Move To Previous Virtual Desktop=Meta+Ctrl+V,none,Mouse Tiler: Toggle Move To Previous Virtual Desktop
+Mouse Tiler: Toggle Tiling Suggestions=,none,Mouse Tiler: Toggle Tiling Suggestions
+Mouse Tiler: Toggle Visibility=,none,Mouse Tiler: Toggle Visibility
 Move Tablet to Next LogicalOutput=none,none,Move the tablet to the next output
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
@@ -89,9 +103,9 @@ Switch to Desktop 6=Meta+6,,Switch to Desktop 6
 Switch to Desktop 7=none,,Switch to Desktop 7
 Switch to Desktop 8=none,,Switch to Desktop 8
 Switch to Desktop 9=,,Switch to Desktop 9
-Switch to Next Desktop=none,,Switch to Next Desktop
+Switch to Next Desktop=Meta+L,,Switch to Next Desktop
 Switch to Next Screen=,,Switch to Next Screen
-Switch to Previous Desktop=,,Switch to Previous Desktop
+Switch to Previous Desktop=Meta+H,,Switch to Previous Desktop
 Switch to Previous Screen=,,Switch to Previous Screen
 Switch to Screen 0=,,Switch to Screen 0
 Switch to Screen 1=,,Switch to Screen 1
@@ -136,8 +150,8 @@ Window No Border=,,Toggle Window Titlebar and Frame
 Window On All Desktops=,,Keep Window on All Desktops
 Window One Desktop Down=Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Window One Desktop Down
 Window One Desktop Up=Meta+Ctrl+Shift+Up,Meta+Ctrl+Shift+Up,Window One Desktop Up
-Window One Desktop to the Left=Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
-Window One Desktop to the Right=Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
+Window One Desktop to the Left=Meta+Shift+H\tMeta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+Window One Desktop to the Right=Meta+Ctrl+Shift+Right\tMeta+Shift+L,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
 Window One Screen Down=,,Move Window One Screen Down
 Window One Screen Up=,,Move Window One Screen Up
 Window One Screen to the Left=,,Move Window One Screen to the Left
@@ -236,7 +250,7 @@ powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 [plasmashell]
 Slideshow Wallpaper Next Image=,,Next Wallpaper Image
 _k_friendly_name=plasmashell
-activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
+activate application launcher=Alt+F1\tMeta+A,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+Alt+1,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=,,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+Alt+2,Meta+2,Activate Task Manager Entry 2
@@ -249,7 +263,7 @@ activate task manager entry 8=Meta+Alt+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+Alt+9,Meta+9,Activate Task Manager Entry 9
 activate widget 3=none,none,Activate Application Launcher Widget
 activate widget 85=,none,Activate Digital Clock Widget
-activate widget 87=,none,Activate Icons-and-Text Task Manager Widget
+activate widget 98=,none,Activate Icons-Only Task Manager Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -280,8 +294,17 @@ new-window=Meta+Return
 [services][net.local.openrgb.desktop]
 _launch=Meta+Shift+X
 
+[services][net.local.wallpaper-next.desktop]
+_launch=Meta+]
+
+[services][net.local.wallpaper-prev.desktop]
+_launch=Meta+[
+
+[services][net.local.wallpaper-random.desktop]
+_launch=Meta+}
+
 [services][org.kde.krunner.desktop]
-_launch=Search\tAlt+Space\tMeta+Space\tAlt+F2
+_launch=Alt+F2\tAlt+Space\tMeta+Shift+Space\tSearch
 
 [services][systemsettings.desktop]
 kcm-powerdevilprofilesconfig=none
