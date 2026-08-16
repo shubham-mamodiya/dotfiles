@@ -31,19 +31,25 @@ hl.unbind("SUPER + SHIFT + G", "Signal", { omarchy = "signal" })
 hl.unbind("SUPER + SHIFT + SLASH", "Passwords", { omarchy = "1password" })
 hl.unbind("SUPER + SHIFT + Y", "YouTube", { webapp = "https://youtube.com/" })
 hl.unbind("SUPER + SHIFT + ALT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
-hl.unbind( "SUPER + SHIFT + CTRL + G", "Google Messages", { webapp = "https://messages.google.com/web/conversations", focus = true })
+hl.unbind("SUPER + SHIFT + CTRL + G", "Google Messages",
+  { webapp = "https://messages.google.com/web/conversations", focus = true })
 hl.unbind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
 hl.unbind("SUPER + SHIFT + S", "Google Maps", { webapp = "https://maps.google.com/", focus = true })
 hl.unbind("SUPER + SHIFT + X", "X", { webapp = "https://x.com/" })
 hl.unbind("SUPER + SHIFT + ALT + X", "X Post", { webapp = "https://x.com/compose/post" })
 hl.unbind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { omarchy = "nautilus-cwd" })
-  --
+--
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
 -- Essential application bindings.
 o.bind("SUPER + SHIFT + F", "File manager", "xdg-terminal-exec yazi")
-o.bind("SUPER + SHIFT + Y", "File manager", {omarchy = "nautilus"})
+o.bind("SUPER + SHIFT + Y", "File manager", { omarchy = "nautilus" })
 o.bind("SUPER + SHIFT + ALT + A", "gemini", { webapp = "https://gemini.google.com" })
-  --
+--
+o.bind("SUPER + bracketright", "Next Background", "omarchy-bg-next")
+
+o.bind("SUPER + bracketleft", "Next Background", "omarchy-bg-prev")
+
+o.bind("SUPER + SHIFT + bracketright", "Next Background", "omarchy-bg-random")
