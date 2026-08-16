@@ -7,6 +7,24 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "existing_window",
+  "restore_on_startup": "launchpad",
+  "proxy": "",
+  "disable_ai": true,
+  "format_on_save": "on",
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "relative_line_numbers": "disabled",
+  "which_key": {
+    "delay_ms": 200,
+    "enabled": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
   "agent_servers": {
     "github-copilot-cli": {
       "type": "registry"

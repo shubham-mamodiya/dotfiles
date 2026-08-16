@@ -136,11 +136,11 @@ Window Custom Quick Tile Bottom=,,Custom Quick Tile Window to the Bottom
 Window Custom Quick Tile Left=,,Custom Quick Tile Window to the Left
 Window Custom Quick Tile Right=,,Custom Quick Tile Window to the Right
 Window Custom Quick Tile Top=,,Custom Quick Tile Window to the Top
-Window Fullscreen=Meta+Shift+O,,Make Window Fullscreen
+Window Fullscreen=Meta+Shift+M,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=,,Expand Window Vertically
 Window Lower=none,,Lower Window
-Window Maximize=Meta+PgUp\tMeta+Shift+M,Meta+PgUp,Maximize Window
+Window Maximize=Meta+Shift+O\tMeta+PgUp,Meta+PgUp,Maximize Window
 Window Maximize Horizontal=,,Maximize Window Horizontally
 Window Maximize Vertical=,,Maximize Window Vertically
 Window Minimize=Meta+PgDown\tMeta+Shift+Q,Meta+PgDown,Minimize Window
@@ -261,6 +261,7 @@ activate task manager entry 6=Meta+Alt+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+Alt+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+Alt+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+Alt+9,Meta+9,Activate Task Manager Entry 9
+activate widget 105=,none,Activate Application Launcher Widget
 activate widget 3=none,none,Activate Application Launcher Widget
 activate widget 85=,none,Activate Digital Clock Widget
 activate widget 98=,none,Activate Icons-Only Task Manager Widget
@@ -305,6 +306,10 @@ _launch=Meta+}
 
 [services][org.kde.krunner.desktop]
 _launch=Alt+F2\tAlt+Space\tMeta+Shift+Space\tSearch
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=
+OpenWithoutScreenshot=
 
 [services][systemsettings.desktop]
 kcm-powerdevilprofilesconfig=none
